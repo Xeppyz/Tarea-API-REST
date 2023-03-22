@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<EditText
+    android:id="@+id/txtNombre"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nombre"
+    android:textSize="25dp"
+    app:layout_constraintEnd_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+  />
+<EditText
+    android:id="@+id/txtApellido"
+    android:hint="Apellido"
+    android:textSize="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/txtNombre"
+
+  />
+  <EditText
+      android:id="@+id/txtCarrera"
+      android:hint="Carerra"
+      android:textSize="25dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/txtApellido"
+    />
+  <EditText
+      android:id="@+id/txtAnio"
+      android:hint="Año"
+      android:textSize="25dp"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/txtCarrera"
+    />
+
+  <Button
+      android:id="@+id/btnInsertar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Agregar"
+
+      app:layout_constraintEnd_toStartOf="parent"
+
+      app:layout_constraintTop_toBottomOf="@id/txtAnio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
